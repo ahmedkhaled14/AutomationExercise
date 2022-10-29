@@ -1,0 +1,14 @@
+
+################################################################################################################################################
+Starting Execution:	"1 out of 1" test cases in the current suite
+Test Method:		"GuiTests.RegisterUserTest.Verify_New_User_Signup_is_visible"
+Test Description:	"Verify New User Signup is visible"
+################################################################################################################################################
+[ReportManager] Target URL: "https://www.automationexercise.com/" @29-10-2022 18:13:56.0664 PM
+[ReportManager] Initial URL: "data:," @29-10-2022 18:13:56.0716 PM
+[ReportManager] Navigate to url "https://www.automationexercise.com/". @29-10-2022 18:14:03.0441 PM
+[ReportManager] Click  " Signup / Login". @29-10-2022 18:14:05.0630 PM
+[ReportManager] Attempting to getAttribute "hidden" from elementLocator "By.xpath: //h2[contains(.,'New User Signup!')]". @29-10-2022 18:14:05.0658 PM
+[ReportManager] Get attribute from  "New User Signup!". @29-10-2022 18:14:06.0042 PM
+[ReportManager] Assertion Passed: Verify that New User Signup is visible @29-10-2022 18:14:08.0617 PM
+[ReportManager] Successfully created attachment "Screenshot - 1667060048301_Verify_New_User_Signup_is_visible_ValidateElementAttribute_passed" @29-10-2022 18:14:08.0646 PM
