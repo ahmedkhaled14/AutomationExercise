@@ -1,5 +1,0 @@
-[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "target/downloadedFiles/"". @29-10-2022 18:13:51.0979 PM
-[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/target/downloadedFiles/"". @29-10-2022 18:13:51.0980 PM
-[ReportManager] Attempting to run locally on: "Windows-64 | Google chrome". @29-10-2022 18:13:52.0081 PM
-[ReportManager] Identifying OS/Driver combination and selecting the correct driver version automatically. Please note that if a new driver executable will be downloaded it may take some time... @29-10-2022 18:13:52.0086 PM
-[ReportManager] Successfully Opened Google chrome. @29-10-2022 18:13:56.0400 PM
