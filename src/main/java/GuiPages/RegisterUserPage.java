@@ -13,6 +13,10 @@ public class RegisterUserPage {
     private By SignUpButton(){
         return By.xpath("//a[contains(.,' Signup / Login')]");
     }
+    public static By LogintoyouraccountLocator(){
+        return By.xpath("//h2[contains(.,'Login to your account')]");
+    }
+
 
     public RegisterUserPage(SHAFT.GUI.WebDriver driver) {
         this.driver = driver;
