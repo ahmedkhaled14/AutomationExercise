@@ -1,0 +1,17 @@
+{
+  "Name": "Ahmed",
+  "Password": "P@$$w0rdTest",
+  "Day": 15 ,
+  "Month": "October",
+  "Year": 1995 ,
+  "FirstName": "Ahmed",
+  "LastName": "Khaled",
+  "Company": "RealMadrid",
+  "Address1": "Spain",
+  "Address2": "Egypt",
+  "Country": "United States",
+  "State": "California",
+  "City": "LosAngeles",
+  "Zipcode": 90014,
+  "MobileNumber": 7854621
+}

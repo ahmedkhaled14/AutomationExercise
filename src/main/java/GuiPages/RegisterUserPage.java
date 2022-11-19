@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 
 public class RegisterUserPage {
     private  SHAFT.GUI.WebDriver driver;
-    private final String URL = "https://www.automationexercise.com/";
+    private final String URL = System.getProperty("URL");
 
     public static By SliderLocator(){
       return  By.xpath("(//*[@alt='demo website for practice'])[1]");
