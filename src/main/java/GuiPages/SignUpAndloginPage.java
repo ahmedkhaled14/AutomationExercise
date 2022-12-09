@@ -15,6 +15,10 @@ public class SignUpAndloginPage {
     private final By SignInEmail = By.xpath("(//input[@type='email'])[1]");
     private final By password = By.name("password");
     private final By LoginButton = By.xpath("//button[contains(.,'Login')]");
+
+    public static By ErrorMessageEmailExist(){
+        return By.xpath("//p[contains(.,'Email Address already exist!')]");
+    }
     public static By ErrorMessageLocator(){
         return By.xpath("//p[contains(.,'Your email or password is incorrect!')]");
     }

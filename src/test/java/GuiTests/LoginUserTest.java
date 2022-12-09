@@ -14,7 +14,7 @@ public class LoginUserTest {
     private final SHAFT.TestData.JSON LoginUserTestData = new SHAFT.TestData.JSON(System.getProperty("SignInTestData"));
 
     @BeforeMethod
-    public void beforeClass() {
+    public void beforeMethod() {
         driver = new SHAFT.GUI.WebDriver();
     }
 
@@ -65,7 +65,24 @@ public class LoginUserTest {
                 .isVisible()
                 .withCustomReportMessage("Verify that user is navigated to login page after Click on LogOutButton ")
                 .perform();
-        
+
+    }
+
+    @Test(description = "Register User with existing email")
+    public void Register_User_with_existing_email(){
+        new RegisterUserPage(driver)
+                .NavigateToUrl()
+                .ClickOnSignupButton()
+                .AddNewUserSignup( LoginUserTestData.getTestData("Password"),LoginUserTestData.getTestData("EmailAddress"))
+                .ClickOnSignUpButton();
+
+        driver.assertThat()
+                .element(SignUpAndloginPage.ErrorMessageEmailExist())
+                .text()
+                .contains("Email Address already exist!")
+                .withCustomReportMessage("Verify error 'Email Address already exist!' is visible")
+                .perform();
+
     }
 
 

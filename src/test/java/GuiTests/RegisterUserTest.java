@@ -18,7 +18,7 @@ public class RegisterUserTest {
     private SHAFT.TestData.JSON AccountDetailstestData = new SHAFT.TestData.JSON(System.getProperty("AccountDetailsTestData"));
 
     @BeforeMethod
-    public void beforeClass() {
+    public void beforeMethod() {
         driver = new SHAFT.GUI.WebDriver();
 
     }

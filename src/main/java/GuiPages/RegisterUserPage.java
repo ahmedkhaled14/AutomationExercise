@@ -4,16 +4,22 @@ import com.shaft.driver.SHAFT;
 import org.openqa.selenium.By;
 
 public class RegisterUserPage {
-    private  SHAFT.GUI.WebDriver driver;
+    private SHAFT.GUI.WebDriver driver;
     private final String URL = System.getProperty("URL");
 
-    public static By SliderLocator(){
-      return  By.xpath("(//*[@alt='demo website for practice'])[1]");
+    public static By SliderLocator() {
+        return By.xpath("(//*[@alt='demo website for practice'])[1]");
     }
-    private By SignUpButton(){
+
+    private By SignUpButton() {
         return By.xpath("//a[contains(.,' Signup / Login')]");
     }
-    public static By LogintoyouraccountLocator(){
+
+    private By ContactUsButton() {
+        return By.xpath("//a[contains(.,' Contact us')]");
+    }
+
+    public static By LogintoyouraccountLocator() {
         return By.xpath("//h2[contains(.,'Login to your account')]");
     }
 
@@ -26,8 +32,14 @@ public class RegisterUserPage {
         driver.browser().navigateToURL(URL);
         return this;
     }
-    public SignUpAndloginPage ClickOnSignupButton(){
+
+    public SignUpAndloginPage ClickOnSignupButton() {
         driver.element().click(SignUpButton());
         return new SignUpAndloginPage(driver);
+    }
+
+    public ContactUsPage ClickOnContactUsButton() {
+        driver.element().click(ContactUsButton());
+        return new ContactUsPage(driver);
     }
 }
