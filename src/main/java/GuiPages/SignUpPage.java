@@ -57,7 +57,9 @@ public class SignUpPage {
     }
 
     public AccountCreatedPage ClickOnCreateAccountButton() {
+        driver.browser().setWindowSize(50,400);
         driver.element().click(CreateAccountButton);
+        driver.browser().maximizeWindow();
         return new AccountCreatedPage(driver);
     }
 
