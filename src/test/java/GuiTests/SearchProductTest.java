@@ -39,26 +39,6 @@ public class SearchProductTest {
 
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     @AfterMethod
     public void afterMethod() {
         driver.quit();

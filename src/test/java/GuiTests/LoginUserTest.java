@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 public class LoginUserTest {
     private SHAFT.GUI.WebDriver driver;
 
-    private final SHAFT.TestData.JSON LoginUserTestData = new SHAFT.TestData.JSON(System.getProperty("SignInTestData"));
+    public static SHAFT.TestData.JSON LoginUserTestData = new SHAFT.TestData.JSON(System.getProperty("SignInTestData"));
 
     @BeforeMethod
     public void beforeMethod() {
