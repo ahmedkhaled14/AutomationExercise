@@ -32,5 +32,10 @@
 
 #### 🏷️ NB: If you wish to use SHAFT with IntelliJ please apply these settings:
 Run/Debug Configurations > Edit Configurations... > Templates > TestNG > Configuration > Listeners > Add all SHAFT_Engine Listeners [AlterSuite, InvokedMethod, Suite]
- 
+
+
+
+
+
+  ![Screenshot 2022-12-30 174314](https://user-images.githubusercontent.com/68038931/210088456-f4c6d422-9af3-4d4e-8574-431067fefecc.png)
  
