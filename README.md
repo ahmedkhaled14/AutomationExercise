@@ -33,6 +33,8 @@
  
  *Java Docs*
  
+ ![Screenshot allure Report](https://user-images.githubusercontent.com/68038931/210175622-a5772283-06a5-42a0-84e0-5966e0a75079.png)
+
  
  - ### 🔍️ Covered Test cases in this project :
 #### ✅Test Case 1: Register User
