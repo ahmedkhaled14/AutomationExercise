@@ -2,6 +2,7 @@ package GuiPages;
 
 import com.shaft.driver.SHAFT;
 import org.openqa.selenium.By;
+import org.python.modules._sre;
 
 public class ProductsPage {
 
@@ -17,6 +18,7 @@ public class ProductsPage {
     private By View_first_product() {
         return By.xpath("//a[@href='/product_details/1']");
     }
+
 
     SHAFT.GUI.WebDriver driver ;
     public ProductsPage(SHAFT.GUI.WebDriver driver){
@@ -37,7 +39,5 @@ public class ProductsPage {
         driver.element().click(submit_search());
         return new SearchedProductsPage(driver);
     }
-
-
 
 }

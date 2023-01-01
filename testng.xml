@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="AutomationExercise">
+        <classes>
+            <class name="GuiTests.ContactUsFormTest">
+                <methods>
+                    <include name="ContactUsForm"/>
+                </methods>
+            </class>
+            <class name="GuiTests.LoginUserTest">
+                <methods>
+                    <include name="Login_User_with_correct_email_and_password"/>
+                    <include name="Login_User_with_Incorrect_email_and_password"/>
+                    <include name="Logout_User"/>
+                    <include name="Register_User_with_existing_email"/>
+                </methods>
+            </class>
+            <class name="GuiTests.ProductsTest">
+                <methods>
+                    <include name="Verify_user_is_navigated_to_ALL_PRODUCTS_page_successfully"/>
+                    <include name="Verify_that_Product_detail_Is_visible"/>
+                </methods>
+            </class>
+            <class name="GuiTests.RegisterUserTest">
+                <methods>
+                    <include name="Verify_that_home_page_is_visible_successfully"/>
+                    <include name="Verify_New_User_Signup_is_visible"/>
+                    <include name="Verify_that_Enter_Account_Information_is_visible"/>
+                    <include name="Verify_that_Account_Created_is_visible"/>
+                </methods>
+            </class>
+            <class name="GuiTests.SearchProductTest">
+                <methods>
+                    <include name="Verify_Searched_Products_is_visible"/>
+                </methods>
+            </class>
+            <class name="GuiTests.VerifySubscriptionTest">
+                <methods>
+                    <include name="Verify_Subscription_in_home_page"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

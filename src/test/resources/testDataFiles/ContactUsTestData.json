@@ -3,5 +3,5 @@
   "Email": "Test1422@gmail.com",
   "Subject": "Sport",
   "Message":"My name is Ahmed Khaled And I will Be A great Software Test Automation Engineer One Day 'Hala Madrid' 'Vamos'  ",
-  "filePath": "C:\\Users\\Shahin Lap\\Desktop\\Profile.pdf"
+  "filePath": "src/test/resources/testDataFiles/Profile.pdf"
 }

@@ -9,7 +9,8 @@ import org.testng.annotations.Test;
 import static GuiTests.LoginUserTest.LoginUserTestData;
 
 public class VerifySubscriptionTest {
-    SHAFT.GUI.WebDriver driver ;
+    SHAFT.GUI.WebDriver driver;
+
     @BeforeMethod
     public void beforeMethod() {
         driver = new SHAFT.GUI.WebDriver();
@@ -17,7 +18,7 @@ public class VerifySubscriptionTest {
 
 
     @Test(description = "Verify Subscription in home page")
-    public void Verify_Subscription_in_home_page(){
+    public void Verify_Subscription_in_home_page() {
         new RegisterUserPage(driver)
                 .NavigateToUrl()
                 .Enter_email_address_in_input(LoginUserTestData.getTestData("EmailAddress"));

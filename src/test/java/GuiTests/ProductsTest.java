@@ -52,13 +52,6 @@ public class ProductsTest {
                 .perform();
     }
 
-
-
-
-
-
-
-
     @AfterMethod
     public void afterMethod() {
         driver.quit();
