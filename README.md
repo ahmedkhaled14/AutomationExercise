@@ -34,6 +34,7 @@
  *Java Docs*
  
  ![Screenshot allure Report](https://user-images.githubusercontent.com/68038931/210175622-a5772283-06a5-42a0-84e0-5966e0a75079.png)
+![extent-reports2222](https://user-images.githubusercontent.com/68038931/210176238-16b3b676-e534-4366-85d4-19e0b55b3212.png)
 
  
  - ### 🔍️ Covered Test cases in this project :
