@@ -33,6 +33,24 @@ public class SignUpPage {
     }
 
 
+    /**
+     * @param Name         String Value From testDataFiles AccountDetailsTestData.json
+     * @param Password     String Value From testDataFiles AccountDetailsTestData.json
+     * @param Day          int Value From testDataFiles AccountDetailsTestData.json
+     * @param Month        String Value From testDataFiles AccountDetailsTestData.json
+     * @param Year         int Value From testDataFiles AccountDetailsTestData.json
+     * @param FirstName    String Value From testDataFiles AccountDetailsTestData.json
+     * @param LastName     String Value From testDataFiles AccountDetailsTestData.json
+     * @param Company      String Value From testDataFiles AccountDetailsTestData.json
+     * @param Address1     String Value From testDataFiles AccountDetailsTestData.json
+     * @param Address2     String Value From testDataFiles AccountDetailsTestData.json
+     * @param Country      String Value From testDataFiles AccountDetailsTestData.json
+     * @param State        String Value From testDataFiles AccountDetailsTestData.json
+     * @param City         String Value From testDataFiles AccountDetailsTestData.json
+     * @param Zipcode      int Value From testDataFiles AccountDetailsTestData.json
+     * @param MobileNumber int Value From testDataFiles AccountDetailsTestData.json
+     * @return SignUpPage
+     */
     public SignUpPage FillAccountDetails(String Name, String Password, int Day, String Month, int Year, String FirstName, String LastName,
                                          String Company, String Address1, String Address2, String Country, String State,
                                          String City, int Zipcode, int MobileNumber) {
@@ -56,8 +74,11 @@ public class SignUpPage {
 
     }
 
+    /**
+     * @return Account Created Page
+     */
     public AccountCreatedPage ClickOnCreateAccountButton() {
-        driver.browser().setWindowSize(50,400);
+        driver.browser().setWindowSize(50, 400);
         driver.element().click(CreateAccountButton);
         driver.browser().maximizeWindow();
         return new AccountCreatedPage(driver);

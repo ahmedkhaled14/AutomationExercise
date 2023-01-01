@@ -45,32 +45,46 @@ public class RegisterUserPage {
         this.driver = driver;
     }
 
+    /**
+     * @return RegisterUserPage
+     */
     public RegisterUserPage NavigateToUrl() {
         driver.browser().navigateToURL(URL);
         return this;
     }
 
+    /**
+     * @return SignUp And login Page
+     */
     public SignUpAndloginPage ClickOnSignupButton() {
         driver.element().click(SignUpButton());
         return new SignUpAndloginPage(driver);
     }
 
+    /**
+     * @return ContactUsPage
+     */
     public ContactUsPage ClickOnContactUsButton() {
         driver.element().click(ContactUsButton());
         return new ContactUsPage(driver);
     }
 
+    /**
+     * @return Products Page
+     */
     public ProductsPage ClickOnProductsButton() {
         driver.element().click(ProductsButton());
         return new ProductsPage(driver);
     }
 
+    /**
+     * @param EmailAddress String Value From testDataFiles SignInTestData.json
+     * @return Register User Page
+     */
     public RegisterUserPage Enter_email_address_in_input(String EmailAddress) {
         driver.element().type(susbscribe_email_locator(), EmailAddress).keyPress(susbscribe_email_locator(), Keys.ENTER);
         return this;
     }
-
-
 
 
 }
