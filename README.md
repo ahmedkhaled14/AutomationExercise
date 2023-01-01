@@ -145,6 +145,9 @@
 5. Verify text 'SUBSCRIPTION'
 6. Enter email address in input and click arrow button
 7. Verify success message 'You have been successfully subscribed!' is visible
+
+![Screenshot allure Report](https://user-images.githubusercontent.com/68038931/210175622-a5772283-06a5-42a0-84e0-5966e0a75079.png)
+
  
  
 
